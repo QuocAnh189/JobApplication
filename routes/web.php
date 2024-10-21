@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Src\User\Infrastructure\EloquentModels\UserEloquentModel;
 
 Route::get('/', function () {
-    return view('index');
+    $users = UserEloquentModel::all();
+    return response()->json($users);
 });
