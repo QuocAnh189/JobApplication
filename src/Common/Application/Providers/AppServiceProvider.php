@@ -2,7 +2,6 @@
 
 namespace Src\Common\Application\Providers;
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
